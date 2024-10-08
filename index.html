@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Simple styling for the login screen */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #login-form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .emoji-button {
+      font-size: 50px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    #reset-button {
+      padding: 10px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="login-form">
+    <h2>Select the Emojis in Order</h2>
+    <div>
+      <button class="emoji-button" onclick="selectEmoji('think')">🤔</button>
+      <button class="emoji-button" onclick="selectEmoji('frown')">😠</button>
+      <button class="emoji-button" onclick="selectEmoji('smile')">😊</button>
+      <button class="emoji-button" onclick="selectEmoji('sad')">😢</button>
+      <button class="emoji-button" onclick="selectEmoji('love')">😍</button>
+    </div>
+    <button id="reset-button" onclick="resetSelection()">Reset</button>
+  </div>
+
+  <script>
+    // รหัสผ่านที่กำหนด: หน้าคิด -> หน้ายิ้ม -> หน้ารัก
+    const correctSequence = ['think', 'smile', 'love'];
+    let userSequence = [];
+
+    function selectEmoji(emoji) {
+      userSequence.push(emoji);
+
+      // ตรวจสอบลำดับการเลือกของผู้ใช้
+      if (userSequence.length === correctSequence.length) {
+        if (JSON.stringify(userSequence) === JSON.stringify(correctSequence)) {
+          // ถ้าผู้ใช้เลือกถูกต้อง ให้เปลี่ยนไปยังหน้า index2.html
+          window.location.href = 'index3.html';
+        } else {
+          alert('Incorrect sequence. Please try again.');
+          resetSelection();
+        }
+      }
+    }
+
+    function resetSelection() {
+      userSequence = [];
+    }
+  </script>
+
+</body>
+
+</html>

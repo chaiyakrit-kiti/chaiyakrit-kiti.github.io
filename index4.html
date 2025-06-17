@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Chayakrit Kitiwattanabumrung</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar / Navbar -->
+  <div class="nav-toggle" id="nav-toggle">
+    <i class="uil uil-bars"></i>
+  </div>
+  <aside class="sidebar" id="sidebar">
+    <nav class="nav">
+      <div class="nav-logo">
+        <a href="#home" class="nav-logo-text">CK</a>
+      </div>
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#sop" class="nav-link">Purpose</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#work" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#learning" class="nav-link">Camps</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-close" id="nav-close"><i class="uil uil-times"></i></div>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <!-- Home / Hero -->
+    <section class="home" id="home">
+      <div class="home-container container grid">
+        <div class="home-data">
+          <h1 class="home-title">Hi, I'm Oomsin</h1>
+          <h3 class="home-subtitle">Future ICT Engineer & Cyber Ambassador</h3>
+          <p class="home-description">
+            Passionate about using tech to solve real problems, I build smart systems, teach kids about code, and dream of creating a safer, smarter world.
+          </p>
+          <p class="dynamic-text">
+            <span class="dynamic-text-prefix">I will be  </span>
+            <span class="dynamic-text-main"></span>
+          </p>
+          <p class="goal fade-in">My goal is <strong>Mahidol ICT</strong> !</p>
+          <a href="#about" class="button"><i class="uil uil-user button-icon"></i>More About me!</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="about section" id="about">
+      <h2 class="section-title" data-heading="About">About Me</h2>
+      <div class="about-container container grid">
+        <img src="images/home-img.png" alt="Profile" class="about-img">
+        <div class="about-data">
+          <h3 class="about-heading">Hi, I'm Chayakrit Kitiwattanabumrung</h3>
+          <p class="about-description">
+            A high school student from Thailand. My journey began with a Gundam model and led to innovations like Smart4Alert, an award-winning IoT fire-safety system. As a Cyber Youth Ambassador and mentor, I love building tech that helps others.
+          </p>
+          <a href="#contact" class="button"><i class="uil uil-navigator button-icon"></i>Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statement of Purpose -->
+    <section class="sop section" id="sop">
+      <h2 class="section-title" data-heading="SOP">My Purpose</h2>
+      <div class="container">
+        <h3>The Spark That Started It All</h3>
+        <p>
+          When I assembled my first Gundam model in Grade 7, I didn't just see a toy, I saw potential. I started pulling it apart, wondering "How can I make this thing walk?" My father said, "Inventors must dare to dissect." That moment sparked my lifelong fascination with technology.<br/>
+        </p>
+        <h3><br/>My Journey & Readiness for ICT</h3>
+        <p>
+          From tinkering with Redstone logic in Minecraft to building my first LED-blinking Arduino prototype, my curiosity led me to coding and electronics. I taught myself C++ and Python, built Smart4Alert,a real-time IoT fire alert system, and won 1st Runner-Up at RMUTK's National Applied Technology Exhibition. That victory showed me innovation's power to protect lives.
+        </p>
+        <h3><br/>Why ICT Mahidol is My Next Step</h3>
+        <p>
+          I chose Mahidol University's Faculty of Information and Communication Technology because its curriculum perfectly matches my path. The combination of programming, cybersecurity, multimedia, and English-taught instruction mirrors my learning style, experimentation and global collaboration. I've strengthened my English through game-based communication, achieved C2 level on EF SET, and placed first in the regional English Genius Test. More importantly, I've applied these skills beyond classroom, leading workshops, teaching IoT to middle schoolers, and representing my school at national cybersecurity camps.
+        </p>
+        <h3><br/>My Career Vision & Ambition</h3>
+        <p>
+          In five years, I aim to deepen my expertise in cybersecurity and interactive media, building systems that are innovative, secure, and meaningful—solutions merging utility with creativity. My long-term goal is creating educational platforms that blend AI, UX, and security to make learning accessible and safe for everyone.
+        </p>
+        <h3><br/>What I Hope to Build – Together</h3>
+        <p>
+          At Mahidol ICT, I plan to contribute as both student and leader. I want to establish a Gundam-Robotics Club to help peers learn microcontroller programming through hands-on projects and support juniors preparing for CTF competitions, building a culture of curiosity and collaboration.
+        </p>
+        <p><br/>
+          This dream started with a toy. Today, I'm ready to turn that spark into systems that serve society.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+      <h2 class="section-title" data-heading="Skills">Technical Skills & Strengths</h2>
+      <div id="skills-content" class="container">
+        <div class="skill">
+          <span>💻 Programming: Python, C, HTML / CSS / JavaScript</span>
+          <div class="skill-bar"><div class="skill-level" data-level="75"></div></div>
+        </div>
+        <div class="skill">
+          <span>🔐 Cybersecurity: CTF, Network Defense, Cyber Youth Camp</span>
+          <div class="skill-bar"><div class="skill-level" data-level="85"></div></div>
+        </div>
+        <div class="skill">
+          <span>🤖 IoT & Robotics: Arduino, NodeMCU, Smart Systems</span>
+          <div class="skill-bar"><div class="skill-level" data-level="85"></div></div>
+        </div>
+        <div class="skill">
+          <span>🎨 Design & Multimedia: Figma, Premiere Pro</span>
+          <div class="skill-bar"><div class="skill-level" data-level="70"></div></div>
+        </div>
+        <div class="skill">
+          <span>🌐 Web Dev: Responsive Design, UI/UX, Web Components</span>
+          <div class="skill-bar"><div class="skill-level" data-level="75"></div></div>
+        </div>
+        <div class="skill">
+          <span>🌍 English Proficiency</span>
+          <div class="skill-bar"><div class="skill-level" data-level="90"></div></div>
+        </div>
+        <div class="skill">
+          <span>👥 Soft Skills & Leadership</span>
+          <div class="skill-bar"><div class="skill-level" data-level="85"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="work section" id="work">
+      <h2 class="section-title" data-heading="Projects">Project showcase</h2>
+
+      <div class="work-container container grid">
+        <!-- Project 1: Smart4Alert -->
+        <div class="work-card">
+          <img src="images/projects/smart4alert.jpg" alt="Smart4Alert" class="work-img">
+          <h3 class="work-title">Smart4Alert</h3>
+          <p class="work-description">
+            An IoT fire-alert system detecting gas and flame, sending LINE alerts within 3 seconds.  1st Runner-Up at RMUTK 2025.
+          </p>
+          <div class="work-links">
+            <a href="https://github.com/yourusername/Smart4Alert" target="_blank" class="work-button">View Code</a>
+            <a href="https://youtu.be/yourvideo" target="_blank" class="work-button">Demo Video</a>
+          </div>
+          <ul class="work-skills">
+            <li>🤖 IoT & Robotics</li>
+            <li>Arduino</li>
+            <li>NodeMCU</li>
+            <li>Smart Systems</li>
+          </ul>
+          <!-- Skill Usage Bars -->
+          <div class="work-skill-bars">
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">Arduino</h3>
+                <span class="skills-number">85%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage" style="width: 85%;"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">NodeMCU</h3>
+                <span class="skills-number">85%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage" style="width: 85%;"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">Python</h3>
+                <span class="skills-number">80%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage" style="width: 80%;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Web Portfolio -->
+        <div class="work-card">
+          <img src="images/projects/web-portfolio.jpg" alt="Web Portfolio" class="work-img">
+          <h3 class="work-title">Web Portfolio</h3>
+          <p class="work-description">
+            Personal web portfolio built with HTML, CSS and JavaScript. Responsive design & interactive UI/UX.
+          </p>
+          <div class="work-links">
+            <a href="https://yourdomain.com" target="_blank" class="work-button">Live Site</a>
+            <a href="https://github.com/yourusername/web-portfolio" target="_blank" class="work-button">Source Code</a>
+          </div>
+          <ul class="work-skills">
+            <li>🌐 Web Dev</li>
+            <li>Responsive Design</li>
+            <li>UI/UX</li>
+            <li>Web Components</li>
+          </ul>
+          <!-- Skill Usage Bars -->
+          <div class="work-skill-bars">
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">HTML</h3>
+                <span class="skills-number">80%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage" style="width: 80%;"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">CSS</h3>
+                <span class="skills-number">80%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage" style="width: 80%;"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">JavaScript</h3>
+                <span class="skills-number">70%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage" style="width: 70%;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Rock Paper Scissor -->
+        <div class="work-card">
+          <img src="images/projects/rock-paper-scissor.jpg" alt="Rock Paper Scissor" class="work-img">
+          <h3 class="work-title">Rock Paper Scissor</h3>
+          <p class="work-description">
+            A real-time Rock–Paper–Scissors game using Python & OpenCV for hand-gesture recognition.
+          </p>
+          <div class="work-links">
+            <a href="https://github.com/yourusername/rps-opencv" target="_blank" class="work-button">Source Code</a>
+          </div>
+          <ul class="work-skills">
+            <li>💻 Programming</li>
+            <li>Python</li>
+            <li>OpenCV</li>
+          </ul>
+          <!-- Skill Usage Bars -->
+          <div class="work-skill-bars">
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">Python</h3>
+                <span class="skills-number">80%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage" style="width: 80%;"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">OpenCV</h3>
+                <span class="skills-number">75%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage" style="width: 75%;"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">Algorithm Logic</h3>
+                <span class="skills-number">65%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage" style="width: 65%;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+        <!-- Project 3: Pure CSS Tower of Hanoi -->
+        <div class="work-card">
+          <img src="images/projects/css-hanoi.jpg" alt="Pure CSS Tower of Hanoi" class="work-img">
+          <h3 class="work-title">Tower of Hanoi</h3>
+          <p class="work-description">
+            Interactive Tower of Hanoi game implemented using only HTML & CSS animations.
+          </p>
+          <div class="work-links">
+            <a href="https://yourdomain.com/css-hanoi" target="_blank" class="work-button">Play Demo</a>
+            <a href="https://github.com/yourusername/css-hanoi" target="_blank" class="work-button">Source Code</a>
+          </div>
+          <ul class="work-skills">
+            <li>💻 Programming</li>
+            <li>HTML / CSS / JavaScript</li>
+            <li>CSS Animations</li>
+          </ul>
+          <!-- Skill Usage Bars -->
+          <div class="work-skill-bars">
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">HTML</h3>
+                <span class="skills-number">70%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage" style="width: 70%;"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-titles">
+                <h3 class="skills-name">CSS Animations</h3>
+                <span class="skills-number">80%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage" style="width: 80%;"></span>
+              </div>
+            </div>
+          </div>
+        </div>      
+        </div>
+    </section>
+
+    <!-- Awards & Achievements Section (styled like My Projects) -->
+    <section id="achievements" class="projects">
+      <h2 class="section-title" data-heading="Achievements">My Achievements</h2>
+      <div class="cards-grid">
+         <!-- RMUTK IoT Award 2025 -->
+        <div class="card">
+          <img src="images/achievements/iot-project-2025.png" alt="IoT Project 2025" />
+          <div class="card-content">
+            <h3>1st Runner-Up – RMUTK IoT Award 2025</h3>
+            <p>Recognized for Smart4Alert, an Arduino-based fire-alert IoT system.</p>
+          </div>
+        </div>
+        <!-- RTARF Cybersecurity CTF Top 16 -->
+        <div class="card">
+          <img src="images/achievements/ctf-top16-2023.png" alt="CTF Top16 2023" />
+          <div class="card-content">
+            <h3>Top 16 – RTARF Cybersecurity CTF</h3>
+            <p>Placed in the Top 16 at the Royal Thai Armed Forces Cybersecurity Bootcamp CTF.</p>
+          </div>
+        </div>
+        <!-- BPK Honor Day 2024 -->
+        <div class="card">
+          <img src="images/achievements/bpk-honor-2024.png" alt="BPK Honor Day 2024" />
+          <div class="card-content">
+            <h3>Certificate of BPK Honor Day 2024</h3>
+            <p>Honored for representing my school with dedication during the 2024 ceremony.</p>
+          </div>
+        </div>
+        <!-- English Genius Test 2024 -->
+        <div class="card">
+          <img src="images/achievements/english-genius-2024.png" alt="English Genius Test 2024" />
+          <div class="card-content">
+            <h3>1st Place – English Genius Test 2024</h3>
+            <p>Top regional score achieved on November 1, 2024, showcasing strong English proficiency.</p>
+          </div>
+        </div>
+        <!-- Outstanding Youth Ambassador 2023 -->
+        <div class="card">
+          <img src="images/achievements/engenius-ambassador-2023.png" alt="Outstanding Youth Ambassador 2023" />
+          <div class="card-content">
+            <h3>Outstanding Youth Ambassador 2023</h3>
+            <p>Scholarship recipient under the Engenius Program, leading ICT initiatives and social impact.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Learning Camps -->
+     <section id="learning" class="section">
+      <h2 class="section-title" data-heading="Camps">Learning Experiences</h2>
+      <div class="camp-categories">
+      <div class="category" data-type="RTARF-2025">
+        <img src="images/camp/Banner/RTARF2025.png" class="camp-image" alt="RTARF Young Cyber Booth Camp 2025">
+        <div class="camp-description">RTARF Young Cyber Booth Camp 2025</div>
+      </div>
+      <div class="category" data-type="click-camp-15">
+        <img src="images/camp/Banner/Camp_ClickCamp15.png" class="camp-image" alt="Click Camp 15">
+        <div class="camp-description">Click Camp 15</div>
+      </div>
+      <div class="category" data-type="let-me-tired-4">
+        <img src="images/camp/Banner/Camp_LetMeTired4.png" class="camp-image" alt="Let me Tired 4">
+        <div class="camp-description">Let me Tired 4</div>
+      </div>
+      <div class="category" data-type="cyber-youth-camp">
+        <img src="images/camp/Banner/Camp_CyberYouth.png" class="camp-image" alt="Cyber Youth Camp">
+        <div class="camp-description">Cyber Youth Camp</div>
+      </div>
+    </div>
+  </section>
+    
+  <!-- Thumbnails Modal -->
+  <div id="camp-browser" class="modal">
+    <span id="camp-close" class="close">&times;</span>
+    <div id="camp-images"></div>
+  </div>
+
+  <!-- Fullscreen Modal -->
+  <div id="fullscreen-modal" class="modal">
+    <span id="fullscreen-close" class="close">&times;</span>
+    <img id="fullscreen-image" src="" alt="Fullscreen">
+  </div>
+
+
+
+     <!-- My Certificates Section (from index10.html) -->
+    <section id="certificates" class="certificates section">
+      <h2 class="section-title" data-heading="Certificates">My Certificates</h2>
+      <div class="certificates-container container swiper">
+        <div class="swiper-wrapper">
+          <!-- Example certificate slides -->
+          <div class="swiper-slide">
+            <img src="images/certificates/Adobe Premiere Pro.jpg" alt="Adobe Premiere Pro" />
+            <p class="cert-caption">Certificate in Adobe Premiere Pro</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/AI (1).jpg" alt="AI (1)" />
+            <p class="cert-caption">AI Fundamentals Certificate (Module 1)</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/AI (2).jpg" alt="AI (2)" />
+            <p class="cert-caption">AI Fundamentals Certificate (Module 2)</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/AI (3).jpg" alt="AI (3)" />
+            <p class="cert-caption">AI Fundamentals Certificate (Module 3)</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/AR.jpg" alt="AR" />
+            <p class="cert-caption">Augmented Reality (AR) Workshop Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/C Programming.jpg" alt="C Programming" />
+            <p class="cert-caption">C Programming Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/Canva for Education.png" alt="Canva for Education" />
+            <p class="cert-caption">Canva for Education Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/CyberSecurity (1).jpg" alt="CyberSecurity (1)" />
+            <p class="cert-caption">Cybersecurity Essentials Certificate (Part 1)</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/CyberSecurity (2).jpg" alt="CyberSecurity (2)" />
+            <p class="cert-caption">Cybersecurity Essentials Certificate (Part 2)</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/CyberSecurity (3).jpg" alt="CyberSecurity (3)" />
+            <p class="cert-caption">Cybersecurity Essentials Certificate (Part 3)</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/Data Science for everyone.jpg" alt="Data Science for everyone" />
+            <p class="cert-caption">Data Science for Everyone Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/Data Science.jpg" alt="Data Science" />
+            <p class="cert-caption">Data Science Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/Figma.jpg" alt="Figma" />
+            <p class="cert-caption">Figma Design Workshop Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/HTML CSS.jpg" alt="HTML CSS" />
+            <p class="cert-caption">HTML & CSS Web Development Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/Intro Robotics.jpg" alt="Intro Robotics" />
+            <p class="cert-caption">Introduction to Robotics Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/IOT.jpg" alt="IOT" />
+            <p class="cert-caption">Internet of Things (IoT) Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/KidBridght Virtual.jpg" alt="KidBridght Virtual" />
+            <p class="cert-caption">KidBright Virtual Class Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/LeaderShip (1).jpg" alt="LeaderShip (1)" />
+            <p class="cert-caption">Leadership Training Certificate (Part 1)</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/LeaderShip (2).jpg" alt="LeaderShip (2)" />
+            <p class="cert-caption">Leadership Training Certificate (Part 2)</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/LeaderShip (3).jpg" alt="LeaderShip (3)" />
+            <p class="cert-caption">Leadership Training Certificate (Part 3)</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/Multimedia and Animation.jpg" alt="Multimedia and Animation" />
+            <p class="cert-caption">Multimedia and Animation Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/OpenCV.jpg" alt="OpenCV" />
+            <p class="cert-caption">OpenCV Computer Vision Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/Presentation Skill.jpg" alt="Presentation Skill" />
+            <p class="cert-caption">Presentation Skills Workshop Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/Problem solving.jpg" alt="Problem solving" />
+            <p class="cert-caption">Problem Solving Techniques Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/Python KMITL.jpg" alt="Python KMITL" />
+            <p class="cert-caption">Python Programming (KMITL) Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/Python Programming (Upskill).jpg" alt="Python Programming (Upskill)" />
+            <p class="cert-caption">Python Programming Upskill Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/Python programming labs.jpg" alt="Python programming labs" />
+            <p class="cert-caption">Python Programming Labs Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/Python.jpg" alt="Python" />
+            <p class="cert-caption">Python Fundamentals Certificate</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/certificates/Teamwork.jpg" alt="Teamwork" />
+            <p class="cert-caption">Teamwork and Collaboration Certificate</p>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+        <!-- navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+    </section>
+    
+   <section class="contact section" id="contact">
+        <h2 class="section-title" data-heading="Get in Touch">Contact</h2>
+
+        <div class="contact-container container">
+            <div class="contact-content">
+              
+              <div>
+                <h1 class="footer-title">Chaiyakrit</h1>
+                <span class="footer-subtitle">Future ICT Innovator</span>
+                <p class="footer-description">Aspiring to combine Cybersecurity, IoT, and Multimedia to build a safer digital world.</p><br/>
+            </div>
+              
+                <div class="contact-info contact-row">
+                    <div class="contact-card">
+                        <i class="uil uil-envelope-edit contact-card-icon"></i>
+                        <h3 class="contact-card-title">Email</h3>
+                        <span class="contact-card-data">oomsin.kiti@gmail.com</span>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="uil uil-phone contact-card-icon"></i>
+                        <h3 class="contact-card-title">Phone</h3>
+                        <span class="contact-card-data">096-334-4280</span>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="uil uil-facebook-f contact-card-icon"></i>
+                        <h3 class="contact-card-title">Facebook</h3>
+                        <span class="contact-card-data">
+                            <a href="https://www.facebook.com/oomsin.kiti.9" target="_blank" class="contact-link">
+                                facebook.com/oomsin.kiti.9
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="uil uil-globe contact-card-icon"></i>
+                        <h3 class="contact-card-title">Portfolio Website</h3>
+                        <span class="contact-card-data">
+                            <a href="https://chaiyakrit-kiti.github.io" target="_blank" class="contact-link">
+                                chaiyakrit-kiti.github.io
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+    <div class="footer-bg">        
+        <p class="footer-copy">&#169; 2025 Chaiyakrit Portfolio. All rights reserved.</p>
+    </div>
+</footer>
+ </main>          
+          
+<!-- JS scripts for Swiper and other features -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  /* ---------------------------------- JS Script -----------------------------------*/
+   document.addEventListener("DOMContentLoaded", () => {
+     // Initialize certificate swiper
+      const certSwiper = new Swiper('.certificates-container', {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        loop: false,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 }
+        }
+      });
+     
+     // โค้ดใหม่สำหรับ dynamic text
+      const texts = [
+        "ICT Engineer",
+        "Cyber Ambassador", 
+        "IoT Developer",
+        "Front - End Developer",
+        "Creative Technologist"
+      ];
+      let currentIndex = 0;
+      const dynamicText = document.querySelector(".dynamic-text-main"); 
+     
+     function updateText() {
+        dynamicText.classList.remove("zoom-in");
+        setTimeout(() => {
+          dynamicText.textContent = texts[currentIndex];
+          currentIndex = (currentIndex + 1) % texts.length;
+          dynamicText.offsetHeight;        // force reflow
+          dynamicText.classList.add("zoom-in");
+        }, 500);
+      }
+
+      // เซ็ตข้อความแรกและอนิเมทครั้งแรก
+      dynamicText.textContent = texts[0];
+      dynamicText.classList.add("zoom-in");
+      // เริ่มวนลูปสลับข้อความทุก 3.5 วินาที
+      setInterval(updateText, 3500);
+     
+     
+     const campData = {
+        "RTARF-2025": [
+          "images/camp/RTARF (1).jpg",
+          "images/camp/RTARF (2).jpg",
+          "images/camp/RTARF (3).jpg",
+          "images/camp/RTARF (4).jpg"
+        ],
+        "click-camp-15": [
+          "images/camp/ClickCamp15 (4).jpg",
+          "images/camp/ClickCamp15 (5).jpg"
+        ],
+        "let-me-tired-4": [
+          "images/camp/LMT4 (1).jpg",
+          "images/camp/LMT4 (2).jpg",
+          "images/camp/LMT4 (3).jpg"
+        ],
+        "cyber-youth-camp": [
+          "images/camp/CyberYouthCamp (1).jpg",
+          "images/camp/CyberYouthCamp (2).jpg",
+          "images/camp/CyberYouthCamp (3).jpg",
+          "images/camp/CyberYouthCamp (4).jpg"
+        ]
+      };
+      const browserModal = document.getElementById('camp-browser');
+      const fullscreenModal = document.getElementById('fullscreen-modal');
+      const campImages = document.getElementById('camp-images');
+      const fullscreenImage = document.getElementById('fullscreen-image');
+
+      document.querySelectorAll('.category').forEach(category => {
+        category.addEventListener('mouseenter', () => {
+          category.querySelector('.camp-description').style.display = 'block';
+        });
+        category.addEventListener('mouseleave', () => {
+          category.querySelector('.camp-description').style.display = 'none';
+        });
+        category.addEventListener('click', () => {
+          const items = campData[category.dataset.type];
+          campImages.innerHTML = items.map(src => `<img src="${src}" class="thumbnail" alt="Camp image">`).join('');
+          browserModal.style.display = 'flex';
+        });
+      });
+
+      campImages.addEventListener('click', e => {
+        if (e.target.classList.contains('thumbnail')) {
+          fullscreenImage.src = e.target.src;
+          fullscreenModal.style.display = 'flex';
+          browserModal.style.display = 'none';
+        }
+      });
+
+      document.getElementById('fullscreen-close').addEventListener('click', () => {
+        fullscreenModal.style.display = 'none';
+        browserModal.style.display = 'flex';
+      });
+      document.getElementById('camp-close').addEventListener('click', () => {
+        browserModal.style.display = 'none';
+      });
+     
+    });
+  </script>
+</body>
+</html>

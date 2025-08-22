@@ -66,10 +66,6 @@
         #five ~ label {
             z-index: 2;
         }
-        #six ~ input,
-        #six ~ label {
-            z-index: 1;
-        }
 
         input#zero {
             z-index: 7;
@@ -193,10 +189,6 @@
             width: 26vmin;
             background: linear-gradient(135deg, #48dbfb, #0abde3, #006ba6);
         }
-        .six {
-            width: 30vmin;
-            background: linear-gradient(135deg, #ff9ff3, #f368e0, #e84393);
-        }
 
         /* Spacers/Separators */
         .spacer {
@@ -267,7 +259,7 @@
             50% { transform: scale(1.05); }
         }
         
-        input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ .win {
+        input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4):checked ~ .win {
             opacity: 1;
             pointer-events: initial;
         }
@@ -415,13 +407,6 @@
         <input name="five" type="radio" tabindex="-1">
         <label for="five"></label>
         <div class="disc five"></div>
-
-        <input id="six" type="text" tabindex="-1" readonly>
-        <input name="six" type="radio" tabindex="-1" checked>
-        <input name="six" type="radio" tabindex="-1">
-        <input name="six" type="radio" tabindex="-1">
-        <label for="six"></label>
-        <div class="disc six"></div>
 
         <input id="zero" type="text" tabindex="-1" readonly>
 
